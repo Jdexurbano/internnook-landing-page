@@ -22,7 +22,7 @@ function AboutPage() {
   ];
 
   return (
-    <section id="aboutPage" className="min-h-screen py-16">
+    <section id="aboutPage" className="min-h-screen py-25">
       <div className="flex justify-center items-center mb-10">
         <div className="text-center max-w-[29rem]">
           <h1 className="text-cyan-700 font-medium text-xl md:text-2xl">How it Works</h1>
@@ -48,11 +48,13 @@ function AboutPage() {
           </div>
 
           {/* Hero Image */}
-          <div className="flex justify-center items-center mt-10">
+          <div className="flex justify-center items-center w-full -mt-10 md:-mt-40 lg:-mt-80">
             <img
-              src="/images/Hero_1.png"
+              src="/images/CBM_HERO1.png"
               alt="Hero"
-              className="object-contain h-[200px] max-w-md sm:w-[800px] sm:h-[250px] lg:h-[400px] lg:max-w-2xl rounded-lg"
+              className="object-cover w-full max-w-[900px] h-auto 
+              sm:h-[450px] md:h-[650px] lg:h-[300px] xl:h-[850px] 
+              rounded-lg"
             />
           </div>
         </div>

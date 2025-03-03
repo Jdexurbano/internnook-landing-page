@@ -50,7 +50,7 @@ function FeaturesPage() {
     <>
       <section className="h-210 bg-accent pb-20 pt-16 md:px-20 " id="featurePage">
         <div className="text-center py-10">
-          <h1 className="text-cyan-700 font-medium text-1xl md:text-1xl">
+          <h1 className="text-cyan-700 font-medium text-1xl md:text-2xl">
             Features
           </h1>
           <p className="text-base font-normal md:text-lg tracking-normal">

@@ -7,7 +7,7 @@ function NavBar() {
     { id: 2, name: "About", address: "#aboutPage" },
     { id: 3, name: "Features", address: "#featurePage" },
     { id: 4, name: "Contact", address: "#contactPage" },
-    { id: 5, name: "Pricing", address: "#pricingPage" },
+    { id: 5, name: "Subscription", address: "#pricingPage" },
     { id: 6, name: "Login", address: "#loginPage" },
   ];
 

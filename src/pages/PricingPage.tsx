@@ -49,8 +49,8 @@ function PricingPage() {
       <section className="h-210 pb-20 pt-16 md:px-20 " id="pricePage">
         <div className=" flex justify-center items-cente">
           <div className="text-center max-w-[29rem]">
-            <h1 className="text-cyan-700 font-medium text-1xl md:text-1xl">
-              Pricing
+            <h1 className="text-cyan-700 font-medium text-1xl md:text-2xl">
+              Subscription
             </h1>
             <p className="text-base font-normal md:text-lg tracking-normal">
               Internnook connects students, companies, and schools for seamless

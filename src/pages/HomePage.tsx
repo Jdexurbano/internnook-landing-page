@@ -53,9 +53,9 @@ function HomePage() {
             src="../images/CBM_HERO.png"
             alt=""
             className="object-contain w-full max-w-3xl h-auto sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[650px]-mt-20 md:-mt-16 lg:-mt-39"
-            // data-aos="fade-up"
-            // data-aos-duration="1700"
-            // data-aos-delay="550"
+            data-aos="fade-up"
+            data-aos-duration="1700"
+            data-aos-delay="550"
           />
         </div>
 
