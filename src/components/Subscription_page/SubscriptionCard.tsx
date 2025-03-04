@@ -1,11 +1,11 @@
-interface PricingCardProps {
+interface SubcriptionCardProps {
     title: string;
     description: string;
     price: number;
     features: string [];
 }
 
-function PricingCard ({ title, description, price, features }: PricingCardProps) {
+function SubcriptionCard ({ title, description, price, features }: SubcriptionCardProps) {
     return (
     <>
         <div
@@ -43,4 +43,4 @@ function PricingCard ({ title, description, price, features }: PricingCardProps)
     );
 }
 
-export default PricingCard;
+export default SubcriptionCard;

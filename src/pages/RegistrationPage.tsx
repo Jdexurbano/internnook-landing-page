@@ -1,7 +1,7 @@
 function RegistrationPage () {
     return (
         <>
-            <section className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-20">
+            <section id= "registrationPage" className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-20">
                 <div className="text-center mb-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-primary">
                     Pre-register Now and <br /> Access Exclusive Internship Opportunities!

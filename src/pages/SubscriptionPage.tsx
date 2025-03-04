@@ -1,4 +1,4 @@
-import PricingCard from "../components/Pricing_page/PricingCard";
+import SubcriptionCard from "../components/Subscription_page/SubscriptionCard";
 
 function PricingPage() {
   const cards = [
@@ -46,7 +46,7 @@ function PricingPage() {
   ];
   return (
     <>
-      <section className="h-210 pb-20 pt-16 md:px-20 " id="pricePage">
+      <section className="h-210 pb-20 pt-25 md:px-20 " id="pricingPage">
         <div className=" flex justify-center items-cente">
           <div className="text-center max-w-[29rem]">
             <h1 className="text-cyan-700 font-medium text-1xl md:text-2xl">
@@ -58,10 +58,10 @@ function PricingPage() {
             </p>
           </div>
         </div>
-        <div className="px-20 py-20 grid md:grid-cols-3 gap-2 md:gap-10 ">
+        <div className="px-20 py-15 grid md:grid-cols-3 gap-2 md:gap-10 ">
           {cards.map((data) => {
             return (
-              <PricingCard
+              <SubcriptionCard
                 key={data.id}
                 title={data.title}
                 description={data.description}

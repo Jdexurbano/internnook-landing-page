@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 function ContactPage () {
     return (
     <>  
-        <footer className="bg-white py-20 text-gray-700">
+        <footer id="contactPage" className="bg-white py-20 text-gray-700">
             <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-6">
                 <div className="md:w-1/3">
                     <img src="/images/LOGO_blue_png.png" alt="Internnook Logo" className="h-8 mb-2 mx-auto md:mx-0" />
