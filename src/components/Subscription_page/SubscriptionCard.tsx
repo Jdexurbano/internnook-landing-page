@@ -10,7 +10,7 @@ function SubcriptionCard ({ title, description, price, features }: SubcriptionCa
     <>
         <div
 
-            className="flex items-center gap-4 px-3"
+            className="flex items-center gap-3 "
             data-aos="fade-up"
             data-aos-duration="1500"
         >

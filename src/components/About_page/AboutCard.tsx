@@ -9,11 +9,11 @@ interface StepCardProps {
 function AboutCard({ image, title, description, number, isLast }: StepCardProps) {
   return (
     <div 
-      className={`flex flex-col items-center text-center gap-3 px-8 relative ${!isLast ? "border-r border-gray-300" : ""}`}
+      className={`flex flex-col items-center text-center gap-3 px-8 relative ${!isLast ? "" : ""}`}
       data-aos="fade-up"
       data-aos-duration="1500"
     >
-      <span className="absolute text-7xl font-semibold text-gray-200 opacity-80 top-2 left-34 -translate-x-1/2">
+      <span className="absolute text-9xl font-semibold text-gray-200 opacity-80 top-2 left-33 -translate-x-1/5">
         {number}
       </span>
       <div className="relative flex flex-col items-center gap-2">
