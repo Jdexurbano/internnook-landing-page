@@ -1,36 +1,59 @@
-import { Link } from "react-router";
+import { HashLink as Link } from "react-router-hash-link";
 
 function HomePage() {
+  const link = [
+    { id: 1, 
+      name: "Pre-regisration",
+      address: "#registrationPage" 
+    },
+    { id: 2, 
+      name: "How it Works?",
+      address: "#aboutPage" 
+    },
+    
+  ];
   return (
     <>
-      <section className="relative h-[88vh] bg-primary " id="homepage">
-        <div className="px-6 pt-5 flex flex-col lg:flex-row lg:justify-center  items-center lg:items-start">
+      <section className="relative h-[110vh] bg-primary " id="homepage">
+        <div className="px-6 pt-30 flex flex-col lg:flex-row lg:justify-center items-center lg:items-start">
           <div
             className="text-secondary text-center lg:text-left flex flex-col items-center lg:items-start gap-4 lg:gap-7 lg:w-[1000px] lg:ml-14 lg:pt-8"
             data-aos="fade-right"
             data-aos-duration="1700"
             data-aos-delay="550"
           >
-            <div className="text-2xl sm:text-4xl lg:text-5xl font-bold lg:flex lg:flex-col lg:gap-2">
-              <h1>Unlock Opportunities</h1>
-              <h1>Land Your Dream</h1>
-              <h1>Internship Today!</h1>
+            <div className="text-2xl sm:text-4xl lg:text-4xl font-bold lg:flex lg:flex-col lg:gap-2 mt-3">
+              <h1>Internship made easy,</h1>
+              <h1>right at your nook.</h1>
             </div>
             <div className="lg:w-[500px]">
               <h2 className="font-medium text-base">
-                Find the perfect internship or job that fits your skills and
-                goals. Take the next step in your career with ease!
+                We are internook, an internship simplifier, - hub
+              </h2>
+              <h2 className = "pt-3">
+                Bridges the gap between students, companies, and schools to create successful internship experiences
               </h2>
             </div>
-            <Link className="border-2 border-accent bg-accent cursor-pointer font-semibold text-sm px-4 py-2 rounded-lg active:scale-95 hover:scale-105 transition-transform duration-200 w-full sm:max-w-[500px] lg:w-[200px]" to={"/auth/register"}>
-              Pre-register now
-            </Link>
+            <div>
+              <ul className="flex gap-4 mt-4 font-medium text-secondary">
+                {link.map((data) => (
+                  <Link to={data.address} key={data.id} smooth>
+                    <li className="flex flex-wrap justify-center border-2 border-accent bg-accent 
+                    cursor-pointer font-semibold text-sm px-4 py-2 rounded-lg active:scale-95 
+                    hover:scale-105 transition-transform duration-200 w-full sm:max-w-[500px] lg:w-[200px] 
+                    hover:bg-accent px- py-2 rounded-md cursor-pointer">
+                      {data.name}
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
           </div>
           <img
-            src="../images/Hero.png"
+            src="../images/CBM_HERO.png"
             alt=""
-            className="object-contain h-[286px] max-w-md sm:w-[1000px] sm:h-[17rem] lg:h-[450px] lg:max-w-2xl "
-            data-aos="fade-left"
+            className="object-contain w-full max-w-3xl h-auto sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[650px]-mt-20 md:-mt-16 lg:-mt-39"
+            data-aos="fade-up"
             data-aos-duration="1700"
             data-aos-delay="550"
           />
@@ -39,7 +62,7 @@ function HomePage() {
         {/* Wave SVG */}
         <div className="absolute bottom-0 left-0 w-screen overflow-hidden">
           <svg
-            className="w-full max-h-[100px] md:max-h-[150px]"
+            className="w-full max-h-[150px] md:max-h-[150px]"
             viewBox="0 0 1470 148"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

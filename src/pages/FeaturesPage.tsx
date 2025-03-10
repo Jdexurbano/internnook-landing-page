@@ -4,46 +4,63 @@ function FeaturesPage() {
   const cards = [
     {
       id: 1,
-      name: "Donec consectetur adipiscing",
+      name: "AI-Powered Matching",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit Pellentesque at ante dui. Nam at nunc venenatis, molestie lorem at, lacinia magna.",
+        "Connects companies with top student candidates suited for their intern positions using advanced AI algorithms.",
       image: "case.png",
+      
     },
     {
       id: 2,
-      name: "Donec consectetur adipiscing",
+      name: "Smart Contract Generator",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit Pellentesque at ante dui. Nam at nunc venenatis, molestie lorem at, lacinia magna.",
+        "Automatically generates and facilitates digital signing of MOA between students, companies, and schools",
       image: "computer.png",
     },
     {
       id: 3,
-      name: "Donec consectetur adipiscing",
+      name: "ATS CV Generator",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit Pellentesque at ante dui. Nam at nunc venenatis, molestie lorem at, lacinia magna.",
+        "Helps students create resumes optimized for Applicant Tracking Systems, increasing visibility to employers.",
       image: "docs.png",
     },
     {
       id: 4,
-      name: "Donec consectetur adipiscing",
+      name: "Skills Analysis & Upskilling",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit Pellentesque at ante dui. Nam at nunc venenatis, molestie lorem at, lacinia magna.",
+        "Analyzes students’ skill and provides personalized recommendations to enhance their capabilities.",
+      image: "ai.png",
+    },
+    {
+      id: 5,
+      name: "Real-Time Student Monitoring",
+      description:
+        "Enables schools to monitor and coordinate with their students throughout the internship process.",
+      image: "ai.png",
+    },
+    {
+      id: 6,
+      name: "Google Calendar Integration",
+      description:
+        "Automatically syncs appointments and deadlines to Google Calendar for students and schools.",
       image: "ai.png",
     },
   ];
   return (
     <>
-      <section className="bg-secondary pb-20 pt-16 md:px-10" id="featurePage">
-        <div className="text-center">
-          <h1 className="text-cyan-700 font-medium text-2xl md:text-4xl">
+      <section className="h-210 bg-accent pb-20 pt-16 md:px-20 " id="featurePage">
+        <div className="text-center py-10">
+          <h1 className="text-cyan-700 font-medium text-1xl md:text-2xl">
             Features
           </h1>
-          <p className="font-semibold text-gray-900 md:text-lg">
-            Why you choose Internnook for Internship?
+          <p className="text-base font-normal md:text-lg tracking-normal">
+            Internnook connects students, companies, and schools through innovative 
+          </p>
+          <p>
+            features designed to simplify and enhance the internship experience.
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-8 md:gap-10 mt-3.5">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10 ">
           {cards.map((data) => {
             return (
               <FeatureCard
