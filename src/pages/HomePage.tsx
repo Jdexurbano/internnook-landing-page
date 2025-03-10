@@ -60,7 +60,7 @@ function HomePage() {
         </div>
 
         {/* Wave SVG */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <div className="absolute bottom-0 left-0 w-screen overflow-hidden">
           <svg
             className="w-full max-h-[150px] md:max-h-[150px]"
             viewBox="0 0 1470 148"
