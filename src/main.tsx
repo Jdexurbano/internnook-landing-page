@@ -1,11 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import MainLayout from "./shared/components/layouts/MainLayout.tsx";
 import LoginPage from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
-import StudentInformation from "./pages/StudentInformation.tsx"; // ✅ Import Student Information Page
+import StudentInformation from "./pages/studentInformation.tsx"; // ✅ Import Student Information Page
 
 // Define Routes
 const routes = createBrowserRouter([
