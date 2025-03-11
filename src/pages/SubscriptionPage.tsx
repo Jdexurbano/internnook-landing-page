@@ -1,79 +1,67 @@
-import SubcriptionCard from "../components/Subscription_page/SubscriptionCard";
+import SubscriptionCard from "../components/Subscription_page/SubscriptionCard";
 
-function PricingPage() {
+function SubscriptionPage() {
   const cards = [
     {
       id: 1,
       title: "Free Plan",
-      description:
-        "Free plan for personalize experience",
+      description: "Free plan for personalized experience",
       price: 0,
       features: [
         "Basic internship search",
-        "Limited job application per month",
-        "Access to career resources"
-      ]
+        "Limited job applications per month",
+        "Access to career resources",
+      ],
     },
     {
       id: 2,
-      title: "Premium ",
-      description:
-        "Best for career growth & professionals",
+      title: "Premium",
+      description: "Best for career growth & professionals",
       price: 249,
       features: [
-        "Everything in Premium",
+        "Everything in Free Plan",
         "1-on-1 career coaching",
         "Resume & cover letter review",
         "Early access to top internships",
         "Exclusive mentorship opportunities",
-        "Priority support for job applications and career queries"
-      ]
+        "Priority support for job applications",
+      ],
     },
     {
-      id: 2,
-      title: "Advance ",
-      description:
-        "Great for advanced job seekers",
+      id: 3,
+      title: "Advanced",
+      description: "Great for advanced job seekers",
       price: 149,
       features: [
         "Unlimited job & internship applications",
         "AI-powered job matching",
-        "Exclusive career webinars & resources",
-        "Career progress tracking & insights"
-      ]
+        "Exclusive career webinars",
+        "Career progress tracking & insights",
+      ],
     },
-    
   ];
+
   return (
-    <>
-      <section className="h-210 pb-20 pt-25 md:px-20 " id="pricingPage">
-        <div className=" flex justify-center items-cente">
-          <div className="text-center max-w-[29rem]">
-            <h1 className="text-cyan-700 font-medium text-1xl md:text-2xl">
-              Subscription
-            </h1>
-            <p className="text-base font-normal md:text-lg tracking-normal">
-              Internnook connects students, companies, and schools for seamless
-              internships.
-            </p>
-          </div>
-        </div>
-        <div className="px-20 py-15 grid md:grid-cols-3 gap-2 md:gap-10 ">
-          {cards.map((data) => {
-            return (
-              <SubcriptionCard
-                key={data.id}
-                title={data.title}
-                description={data.description}
-                price={data.price}
-                features={data.features}
-              />
-            );
-          })}         
-        </div>
-      </section>
-    </>
+    <section className="min-h-screen pb-32 pt-20 px-5 md:px-20 flex flex-col justify-center relative overflow-hidden" id="subscriptionPage">
+      <div className="text-center max-w-2xl mx-auto">
+        <h1 className="text-cyan-700 font-medium text-2xl md:text-3xl">Subscription</h1>
+        <p className="text-base md:text-lg mt-2">
+          Internnook connects students, companies, and schools for seamless internships.
+        </p>
+      </div>
+      <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {cards.map((data) => (
+          <SubscriptionCard
+            key={data.id}
+            title={data.title}
+            description={data.description}
+            price={data.price}
+            features={data.features}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 
-export default PricingPage;
+export default SubscriptionPage;
